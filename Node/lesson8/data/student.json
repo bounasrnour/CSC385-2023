@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "fistName":"Nour",
+        "lastName":"Bou Nasr",
+        "grade":85
+    },
+    {
+        "id":2,
+        "fistName":"Celine",
+        "lastName":"Hachem",
+        "grade":90
+    },
+    {
+        "id":3,
+        "fistName":"Rita",
+        "lastName":"Dagher",
+        "grade":80
+    }
+]
