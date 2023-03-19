@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>TODO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Simple todo list</h1>
+
+        <form action="/todo" method="post">
+            <input type="text" name="todoInput" id="todoInput" placeholder="Enter ToDo">
+            <button type="s">Add</button>
+        </form>
+
+        <ul>
+            <% if(todoList.length > 0) { %>
+                <% for(let i = 0; i < todoList.length; i++){ %>
+                    <li><%= todoList[i] %> </li>
+                <% } %>
+            <% }else { %> 
+                <p>Todo is empty:(</p>
+            <% } %>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Copyright Nour Bou Nasr</p>
+    </footer>
+</body>
+</html>

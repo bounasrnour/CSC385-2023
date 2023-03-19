@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap:1rem;
+}
+nav a {
+    color: white;
+    transition: all 0.3s;
+}
+
+nav a :hover{
+    color: green;
+}
+
+main{
+    padding: 1rem 2rem;
+    height: 90vh;
+}
+
+footer{
+    padding: 1rem 2rem;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+input{
+    width: 30rem;
+    padding-left: 1rem;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 4rem;
+}
