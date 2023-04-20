@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //static files
 app.use(express.static('public'));
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://bounasrnour:Jz55ijbvluO3ugFn@cluster0.ztf6q5b.mongodb.net/NDUDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('yourdburl', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
   })
