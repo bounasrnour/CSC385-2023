@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task list</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <body>
+        <h1>task list</h1>
+  
+        <% if (tasks.length === 0) { %>
+          <p>No tasks yet. Add a task below.</p>
+        <% } else { %>
+          <ul>
+            <!-- looping through the tasks -->
+            <% for (let i = 0; i < tasks.length; i++) { %>
+              <li>
+                <%= tasks[i] %>
+                <form method="POST" action="/deleteTask">
+                  <input type="hidden" name="taskIndex" value="<%= i %>">
+                  <button type="submit">Delete</button>
+                </form>
+              </li>
+            <% } %>
+          </ul>
+        <% } %>
+        
+        <form method="POST" action="/addTask">
+          <input type="text" name="newTask">
+          <button type="submit">Add Task</button>
+        </form>
+</body>
+</html>
